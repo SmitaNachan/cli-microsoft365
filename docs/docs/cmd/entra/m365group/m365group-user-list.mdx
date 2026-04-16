@@ -37,6 +37,25 @@ m365 entra m365group user list [options]
 
 When the `properties` option includes values with a `/`, for example: `manager/displayName`, an additional `$expand` query parameter will be included on `manager`.
 
+## Permissions
+
+<Tabs>
+  <TabItem value="Delegated">
+
+  | Resource        | Permissions                              |
+  |-----------------|------------------------------------------|
+  | Microsoft Graph | GroupMember.Read.All, User.ReadBasic.All |
+
+  </TabItem>
+  <TabItem value="Application">
+
+  | Resource        | Permissions                         |
+  |-----------------|-------------------------------------|
+  | Microsoft Graph | GroupMember.Read.All, User.Read.All |
+
+  </TabItem>
+</Tabs>
+
 ## Examples
 
 List all users and their role from Microsoft 365 group specified by ID.

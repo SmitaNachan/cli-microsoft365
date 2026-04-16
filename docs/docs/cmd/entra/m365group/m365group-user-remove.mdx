@@ -1,4 +1,6 @@
 import Global from '../../_global.mdx';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # entra m365group user remove
 
@@ -40,6 +42,25 @@ m365 entra m365group user remove [options]
 ## Remarks
 
 You can remove users from a Microsoft 365 Group or Microsoft Teams team if you are owner of that group or team.
+
+## Permissions
+
+<Tabs>
+  <TabItem value="Delegated">
+
+  | Resource        | Permissions                             |
+  |-----------------|-----------------------------------------|
+  | Microsoft Graph | Group.ReadWrite.All, User.ReadBasic.All |
+
+  </TabItem>
+  <TabItem value="Application">
+
+  | Resource        | Permissions                        |
+  |-----------------|------------------------------------|
+  | Microsoft Graph | Group.ReadWrite.All, User.Read.All |
+
+  </TabItem>
+</Tabs>
 
 ## Examples
 
